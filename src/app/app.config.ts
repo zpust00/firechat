@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"zpust-firebase","appId":"1:989594916389:web:b347108f2cb236a19fd1cc","storageBucket":"zpust-firebase.appspot.com","locationId":"europe-central2","apiKey":"AIzaSyD2eVlkFCXR_GbONXcTFhVBgzryrmViQxM","authDomain":"zpust-firebase.firebaseapp.com","messagingSenderId":"989594916389"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
